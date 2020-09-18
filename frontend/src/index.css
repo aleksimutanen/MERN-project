@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+  /* font-family: 'Roboto Slab', serif; */
+}
+
+/* Page title */ 
+.pageTitle {
+  margin-bottom: 3%;
+}
+
+/* Buttons */
+.btn {
+  background-color:black;
+  color: white;
+  border: 0px;
+}
+
+.btn:hover {
+  background-color:gray;
+  color: black;
+}
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  margin: auto;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: none !important;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover {
+  /* border: none !important; */
+  background-color: gray !important;
+  color: black !important;
+  /* box-shadow: 0px 0px 1px 1px gray !important; */
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  border: none !important;
+  background-color: black !important;
+  color: white !important;
+  box-shadow: 0px 0px 2px 1px black !important;
+}
+
+/* Navbar */ 
+.navbar {
+  z-index: 2;
+}
+
+/* Navbar item */
+.navItem, .navItem:hover {
+  color: black;
+  font-size: large;
+  margin-right: 1vw;
+}
+
+/* Navbar active item */
+.navActiveItem {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Navbar collapse button */
+.navbarToggle {
+  background: white;
+  border: 5px black;
+}
+
+/* Navbar logged user */
+.navbarUser, .navbarUser > a {
+  font-size: large;
+}
+
+/* Navbar company info text */
+.navbarInfoName {
+  /* font-size: large; */
+}
+
+/* Page content */
+.container {
+  margin-top: 5%;
+}
+
+/* Footer */ 
+.footer {
+  margin-top: 5vh;
+  text-align: right;
+}
+
+/* Home image properties */
+.homeImg {
+  margin-top: 5vh;
+  background: no-repeat url('./images/bg.jpg');
+
+  height: 74vh;
+  width: 100%;
+  object-fit: cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Header text properties */
+.header > div {
+  padding: 1%;
+  position: absolute;
+  top: 0;
+}
+
+/* Gallery imagerow */
+.imagesRow {
+  margin-bottom: 5%;
+}
+
+/* Gallery img parent */
+.gridMember {
+  text-align: center;
+}
+
+/* Gallery img */
+.listImage {
+  width: 100vh;
+  height: 35vh;
+  object-fit: cover;
+
+  -webkit-filter: grayscale(1);
+	filter: grayscale(1);
+	-webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  
+  box-shadow: 0px;
+  -moz-box-shadow: 0px;
+  -webkit-box-shadow: 0px;
+}
+
+.listImage:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  
+  box-shadow: 5px 5px 5px gray;
+  -moz-box-shadow: 0px 5px 5px gray;
+  -webkit-box-shadow: 0px 5px 5px gray;     
+}
+
+/* Gallery popdown text */
+#projectInfo {
+  text-align: center;
+  /* margin-bottom: 5%; */
+}
+
+/* Gallery popdown link */
+.infoLink, .infoLink:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Projectpage img */
+.infoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 5%;
+}
+
+/* Notification */
+.notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0px 0px 5px 2px black;
+  text-align: center;
+
+  z-index: 2;
+}
+
+/* Employee img */
+.profileImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Employee profile properties */
+.employeeProfile {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/* Form fields */
+.form-control {
+  border: 1px solid black !important;
+}
+
+.form-control:focus {
+  border: none;
+  box-shadow: 0px 0px 5px 1px black !important;
+  /* border: 2px solid black !important;
+  box-shadow: none !important; */
+}
+
+.form-check:focus {
+  border: none;
+  box-shadow: 0px 0px 5px 1px black !important;
+}
+
+option:checked {
+  background-color: black !important;
+  color: white;
+}
+
+option:hover {
+  background-color: black !important;
+  color: white;
+}
+
+.dropOption:hover {
+  background-color: black !important;
+  color: white;
+}
+
+/* Fast fade for quick transitions */
+.fastFadeIn {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.3s;
+}
+
+/* Slow fade for slower events */
+.slowFadeIn {
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+  }
+  
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Sliding cover when launching app */
+.slider {
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+
+  background: white;
+
+  animation: slider 1s forwards;
+  animation-delay: 0.5s;
+
+  -webkit-animation: slider 1s forwards;
+  -webkit-animation-delay: 0.5s;
+}
+
+@keyframes slider {
+  100% { top: -60%; display: none; }
+}
+
+@-webkit-keyframes slider {
+  100% { left: -60%; display: none; }
+}
