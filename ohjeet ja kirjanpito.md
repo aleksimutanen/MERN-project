@@ -8,21 +8,6 @@ demossa se on kuitenkin näkyvillä. Käyttäjätunnukset ovat vain omistajille,
 lisäämään tietoa. Normaalisti sivulla vieraileville mikään lisääminen/muokkaaminen/poistaminen ei ole näkyvillä.
 
 
-username: user 
-
-password: pass
-
-Normaalikäyttäjä, jolla pääsee lisäämään ja muokkaamaan projekteja/kohteita ylipäätään.
-
-
-username: admin 
-
-password: pass
-
-Adminkäyttäjä, jolla voi muokata ja lisätä myös työntekijöitä ja muokata yrityksen tietoja, logoa ja kuvia.
-
-
-
 # Tuntikirjanpito
 
 Joissain kohdissa tarkempia viestejä tekemisistä löytyy myös commiteista.
