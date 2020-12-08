@@ -37,10 +37,3 @@ päädyin kuitenkin tähän ratkaisuun.
 Sovellukseen jäi asioita, jotka eivät välttämättä ole siinä muodossa, missä haluaisin tai mikä pitäisi 
 olla niiden oikea muoto, mutta aikataulu alkaa vaatimaan pikkuhiljaa, että projekti laitetaan nippuun. 
 Myös joitain ominaisuuksia/toiminnallisuuksia jäi kesken tai ne puuttuvat kokonaan. 
-
-Anyways, enough rambling...
-
-Linkki sovellukseen: https://shrouded-chamber-33986.herokuapp.com/
-
-Linkki ohjeisiin ja kirjanpitoon: https://github.com/aleksimutanen/FS-projekti/blob/master/ohjeet%20ja%20kirjanpito.md
-
